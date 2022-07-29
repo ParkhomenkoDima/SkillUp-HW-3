@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&family=Rubik+Mono+One&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="body body--reg">
+
+    <header class="header">
+        <div class="page-container">
+            <div class="logo">
+                <a class="logo__link" href="../index.html" title="Переход на главную страницу">
+                    <img class="logo__img" src="../img/logo.svg" alt="логотип">
+                </a>
+            </div>
+
+            <nav class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item"><a class="header-nav__link" href="../index.html"
+                            title="Переход на главную страницу">Главная страница</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link" href="articles.html"
+                            title="Переход на страницу со статьями">Статьи</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link" href="catalog.html"
+                            title="Переход на страницу с каталогом">Каталог</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link" href="contacts.html"
+                            title="Переход на страницу с контактами">Контакты</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link" href="gallery.html"
+                            title="Переход на страницу с галереей">Галерея</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link" href="page-nav.html"
+                            title="Переход на страницу навигации">Навигация</a></li>
+                    <li class="header-nav__item header-nav__item--curent"><a class="header-nav__link"
+                            href="registration.html" title="Переход на страницу регистрации">Регистрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="page-container">
+            <h1 class="title">Регистрация</h1>
+
+            <form class="form" action="https://tests.fomenko.top/echo/index.php" method="get">
+                <fieldset class="form__field">
+                    <legend class="form__legend">Ваши имя и фамилия</legend>
+                    <div class="form__wrap">
+                        <label class="form__label" for="name">Имя</label>
+                        <input class="form__input form__input--capitalize" id="name" name="name"
+                            placeholder="Введите Ваше имя" type="text">
+                    </div>
+                    <div class="form__wrap">
+                        <label class="form__label" for="surname">Фамилия</label>
+                        <input class="form__input form__input--capitalize" id="surname" name="surname"
+                            placeholder="Введите Вашу фамилию" type="text">
+                    </div>
+                </fieldset>
+
+                <fieldset class="form__field">
+                    <legend class="form__legend">Ваше изображение</legend>
+                    <div class="form__wrap">
+                        <label class="form__label" for="photo">Выберите изображение</label>
+                        <input class="form__input form__input--file" id="photo" name="photo" type="file">
+                    </div>
+                </fieldset>
+
+                <fieldset class="form__field">
+                    <legend class="form__legend">Данные для доступа</legend>
+                    <div class="form__wrap">
+                        <label class="form__label" for="email">Email</label>
+                        <input class="form__input" id="email" name="email" placeholder="Введите Ваш Email" type="email">
+                    </div>
+                    <div class="form__wrap">
+                        <label class="form__label" for="pass">Пароль</label>
+                        <input class="form__input" id="pass" name="pass" placeholder="Введите пароль" type="password">
+                    </div>
+                    <div class="form__wrap">
+                        <label class="form__label" for="website">Адрес сайта</label>
+                        <input class="form__input" id="website" name="website" type="text" value="https://mysite.name)">
+                    </div>
+                </fieldset>
+
+                <fieldset class="form__field">
+                    <legend class="form__legend">Ваш пол и дата рождения</legend>
+                    <div class="form__wrap form__wrap-hover">
+                        <input class="form__input form__input--radio" id="gender-male" name="gender" type="radio"
+                            value="male" checked>
+                        <label class="form__label" for="gender-male">Мужской</label>
+                    </div>
+                    <div class="form__wrap form__wrap-hover">
+                        <input class="form__input form__input--radio" id="gender-female" name="gender" type="radio"
+                            value="female">
+                        <label class="form__label" for="gender-female">Женский</label>
+                    </div>
+                    <div class="form__wrap">
+                        <label class="form__label" for="dob">Дата рождения</label>
+                        <input class="form__input" id="dob" name="dob" type="date">
+                    </div>
+                </fieldset>
+
+                <fieldset class="form__field">
+                    <legend class="form__legend">Какую кухню Вы предпочитаете?</legend>
+                    <div class="form__wrap form__wrap-hover">
+                        <input class="form__input form__input--checkbox" id="cuisine-ua" name="cuisine" type="checkbox"
+                            value="ua">
+                        <label class="form__label" for="cuisine-ua">Украинскую</label>
+                    </div>
+                    <div class="form__wrap form__wrap-hover">
+                        <input class="form__input form__input--checkbox" id="cuisine-fr" name="cuisine" type="checkbox"
+                            value="fr">
+                        <label class="form__label" for="cuisine-fr">Французскую</label>
+                    </div>
+                    <div class="form__wrap form__wrap-hover">
+                        <input class="form__input form__input--checkbox" id="cuisine-it" name="cuisine" type="checkbox"
+                            value="it">
+                        <label class="form__label" for="cuisine-it">Итальянскую</label>
+                    </div>
+                    <div class="form__wrap form__wrap-hover">
+                        <input class="form__input form__input--checkbox" id="cuisine-jp" name="cuisine" type="checkbox"
+                            value="jp">
+                        <label class="form__label" for="cuisine-jp">Японскую</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form__field">
+                    <legend class="form__legend">Информация про Вас</legend>
+                    <div class="form__wrap">
+                        <label class="form__label" for="my-pet">Ваше домашнее животное</label>
+                        <select class="form__input form__input--select" id="my-pet" size="4" name="my-pet">
+                            <option class="form__option" selected value="Нет домашнего животного">нет домашнего
+                                животного</option>
+                            <option class="form__option" value="Кошка">кошка</option>
+                            <option class="form__option" value="Собака">собака</option>
+                            <option class="form__option" value="Хомячек">хомячек</option>
+                            <option class="form__option" value="Попугай">попугай</option>
+                        </select>
+                    </div>
+                    <div class="form__wrap">
+                        <label for="about-me">Напишите о себе</label>
+                        <textarea class="form__input form__input--textarea" id="about-me" name="about-me"
+                            placeholder="Напишите о себе" cols="40" rows="20"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form__field form__field--btn">
+                    <legend class="form__legend">Зарегистрироваться/Очистить форму</legend>
+                    <div class="form__wrap form__wrap--btn">
+                        <button class="btn" type="submit">Зарегистрироваться</button>
+                    </div>
+                    <div class="form__wrap form__wrap--btn">
+                        <button class="btn" type="reset">Очистить форму</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="page-container">
+            <p class="footer__text">&#169; Dmitriy</p>
+        </div>
+    </footer>
+</body>
+
+</html>
