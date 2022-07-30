@@ -338,6 +338,13 @@ a {
   transform: translateY(-20px);
 }
 
+.form__wrap:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+.form__wrap--sm {
+  margin: 10px 0 5px;
+}
+
 .form__input {
   width: 100%;
   padding: 5px 5px;
